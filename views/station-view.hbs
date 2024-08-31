@@ -1,0 +1,106 @@
+{{> menu}}
+<section class = "section">
+  <div class="notification is-success">
+    Logged in as: {{userEmail}}
+  </div>
+</section>
+<section class="section">
+  <div class="title">
+     Current Station is: {{station.title}} (Latitude = {{station.latitude}}, Longitude = {{station.longitude}})
+  </div>
+  <section>
+  <div class="columns">
+    <div class="column">
+        <div class="card">
+          <div class="card-image">
+          <figure class="image is-4by3">
+            <img
+            src="https://cdn.glitch.global/dec4ea20-4e03-42aa-a900-aae063c5b809/Screenshot%202024-08-30%20at%2011.46.02.png?v=1725014780024"
+            alt="Placeholder image"
+            />
+        </figure>
+            <p><b>
+              <center>Current Weather</center>
+              <center>{{latestReport.weatherCode}}</center>
+            </b></p>
+      </div>
+    </div>  
+    </div>
+  <div class="column">
+    
+  <div class="card">
+          <div class="card-image">
+          <figure class="image is-4by3">
+            <img
+            src="https://cdn.glitch.global/dec4ea20-4e03-42aa-a900-aae063c5b809/Temperature.png?v=1725014035183"
+            alt="Placeholder image"
+            />
+        </figure>
+            <p><b>
+              <center>Tenperature</center>
+              <center>Min {{latestReport.minTemp}}</center>
+              <center>Max {{latestReport.maxTemp}}</center>
+            </b></p>
+      </div>
+    </div>
+    
+  </div>
+  <div class="column">
+    <div class="card">
+          <div class="card-image">
+          <figure class="image is-4by3">
+            <img
+            src="https://cdn.glitch.global/dec4ea20-4e03-42aa-a900-aae063c5b809/wind.png?v=1725014029653"
+            alt="Placeholder image"
+            />
+        </figure>
+      </div>
+      <p><b>
+        <center>Wind Speed</center>
+        <center>Min {{latestReport.minWind}}</center>
+        <center>Max {{latestReport.maxWind}}</center>
+      </b></p>
+    </div>
+    
+    </div>
+  <div class="column">
+    <div class="card">
+          <div class="card-image">
+          <figure class="image is-4by3">
+            <img
+            src="https://cdn.glitch.global/dec4ea20-4e03-42aa-a900-aae063c5b809/pressure.png?v=1725014039269"
+            alt="Placeholder image"
+            />
+        </figure>
+      </div>
+      <p><b>
+        <center>Air Pressure</center>
+        <center>Min {{latestReport.minAirP}}</center>
+        <center>Max {{latestReport.maxAirP}}</center>
+        </b></p>
+    </div>
+    
+    </div>
+  <div class="column">
+    <div class="card">
+          <div class="card-image">
+          <figure class="image is-4by3">
+            <img
+            src="https://cdn.glitch.global/dec4ea20-4e03-42aa-a900-aae063c5b809/compass.jpg?v=1725014043725"
+            alt="Placeholder image"
+            />
+        </figure>
+      </div>
+      <p><b>
+        <center>Wind Direction</center>
+        <center>{{latestReport.windDirection}}</center>
+      </b></p>
+    </div>
+        </div>
+</div>
+  </section>
+  <br>
+  <br>
+  {{> list-reports}}
+  {{> add-report}}
+</section>

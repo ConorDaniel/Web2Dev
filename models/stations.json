@@ -1,0 +1,26 @@
+{
+  "file": "./models/stations.json",
+  "stations": [
+    {
+      "_id": "2178c9ec-3401-4e6e-80e8-9857f127e16f",
+      "title": "Fairview",
+      "userid": "0d7b1e45-b5f1-4720-8873-ce33ac329406",
+      "latitude": "53.3628° N",
+      "longitude": "6.2398° W"
+    },
+    {
+      "_id": "ab2bcaec-352d-43e5-84eb-3dee680516d9",
+      "title": "Stillorgan",
+      "userid": "e401b059-a51a-405b-85e4-6ee86e11d32e",
+      "latitude": "53.3498° N",
+      "longitude": " 6.2603° w"
+    },
+    {
+      "_id": "14966460-6635-43b5-a233-6e5fefec1855",
+      "title": "waterford",
+      "userid": "0d7b1e45-b5f1-4720-8873-ce33ac329406",
+      "latitude": "44.9",
+      "longitude": "3.2"
+    }
+  ]
+}

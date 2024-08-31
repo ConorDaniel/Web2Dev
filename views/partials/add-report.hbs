@@ -1,0 +1,113 @@
+<body class="has-background-success-light">
+  <section class="section">
+    <div class="container">
+      <form class="box" action="/station/{{station._id}}/addreport" method="POST">
+        <label class="label">Enter Weather Report Details:</label>
+        <div class="field is-horizontal">
+          <div class="field-body">
+            <!-- Weather Code Dropdown -->
+            <div class="field">
+              <div class="control">
+                <div class="select is-fullwidth">
+                  <select id="weather-code" name="weatherCode">
+                    <option value="" disabled selected>Select Weather Code</option>
+                    <!-- Combined Weather Codes with Text in the value attribute -->
+                    <option value="200 - Thunder & light rain">200 - Thunder & light rain</option>
+                    <option value="201 - Thunder & rain">201 - Thunder & rain</option>
+                    <option value="202 - Thunder & heavy rain">202 - Thunder & heavy rain</option>
+                    <option value="210 - Thunderstorm - light">210 - Thunderstorm - light</option>
+                    <option value="211 - Thunderstorm">211 - Thunderstorm</option>
+                    <option value="212 - Heavy Thunder">212 - Heavy Thunder</option>
+                    <option value="221 - Ragged Thunder">221 - Ragged Thunder</option>
+                    <option value="230 - Thunder & light drizzle">230 - Thunder & light drizzle</option>
+                    <option value="231 - Thunderstorm & drizzle">231 - Thunderstorm & drizzle</option>
+                    <option value="232 - Thunderstorm & heavy drizzle">232 - Thunderstorm & heavy drizzle</option>
+                    <option value="300 - Light Drizzle">300 - Light Drizzle</option>
+                    <option value="301 - Drizzle">301 - Drizzle</option>
+                    <option value="302 - Heavy Drizzle">302 - Heavy Drizzle</option>
+                    <option value="310 - Light Drizzle-Rain">310 - Light Drizzle-Rain</option>
+                    <option value="311 - Drizzle Rain">311 - Drizzle Rain</option>
+                    <option value="312 - Heavy Drizzle Rain">312 - Heavy Drizzle Rain</option>
+                    <option value="313 - Rain showers & Drizzle">313 - Rain showers & Drizzle</option>
+                    <option value="314 - Heavy shower rain & drizzle">314 - Heavy shower rain & drizzle</option>
+                    <option value="321 - Shower drizzle">321 - Shower drizzle</option>
+                    <option value="500 - Light rain">500 - Light rain</option>
+                    <option value="501 - Moderate rain">501 - Moderate rain</option>
+                    <option value="502 - High intensity rain">502 - High intensity rain</option>
+                    <option value="503 - Very heavy rain">503 - Very heavy rain</option>
+                    <option value="504 - Extreme rain">504 - Extreme rain</option>
+                    <option value="511 - Freezing rain">511 - Freezing rain</option>
+                    <option value="520 - High intensity rain shower">520 - High intensity rain shower</option>
+                    <option value="521 - Shower rain">521 - Shower rain</option>
+                    <option value="522 - Heavy intensity rain">522 - Heavy intensity rain</option>
+                    <option value="531 - Ragged rain shower">531 - Ragged rain shower</option>
+                    <option value="600 - Light snow">600 - Light snow</option>
+                    <option value="601 - Snow">601 - Snow</option>
+                    <option value="602 - Heavy snow">602 - Heavy snow</option>
+                    <option value="611 - Sleet">611 - Sleet</option>
+                    <option value="612 - Light shower snow">612 - Light shower snow</option>
+                    <option value="613 - Shower sleet">613 - Shower sleet</option>
+                    <option value="615 - Light rain & snow">615 - Light rain & snow</option>
+                    <option value="620 - Light shower snow">620 - Light shower snow</option>
+                    <option value="621 - Shower snow">621 - Shower snow</option>
+                    <option value="622 - Heavy shower snow">622 - Heavy shower snow</option>
+                    <option value="701 - Mist">701 - Mist</option>
+                    <option value="711 - Smoke">711 - Smoke</option>
+                    <option value="721 - Haze">721 - Haze</option>
+                    <option value="731 - Dust">731 - Dust</option>
+                    <option value="741 - Fog">741 - Fog</option>
+                    <option value="751 - Sand">751 - Sand</option>
+                    <option value="761 - Dust">761 - Dust</option>
+                    <option value="762 - Ash">762 - Ash</option>
+                    <option value="771 - Squall">771 - Squall</option>
+                    <option value="781 - Tornado">781 - Tornado</option>
+                    <option value="800 - Clear Skies">800 - Clear Skies</option>
+                    <option value="801 - Few clouds 11-25%">801 - Few clouds 11-25%</option>
+                    <option value="802 - Scattered clouds 25-50%">802 - Scattered clouds 25-50%</option>
+                    <option value="803 - Broken clouds 51-84%">803 - Broken clouds 51-84%</option>
+                    <option value="804 - Overcast clouds 85-100%">804 - Overcast clouds 85-100%</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <!-- Existing Fields -->
+            <div class="field">
+              <input class="input" type="text" placeholder="Max Temp" name="maxTemp">
+            </div>
+            <div class="field">
+              <input class="input" type="text" placeholder="Min Temp" name="minTemp">
+            </div>
+            <div class="field">
+              <input class="input" type="text" placeholder="Max Wind" name="maxWind">
+            </div>
+            <div class="field">
+              <input class="input" type="text" placeholder="Min Wind" name="minWind">
+            </div>
+            <div class="field">
+              <input class="input" type="text" placeholder="Max Air Pressure" name="maxAirP">
+            </div>
+            <div class="field">
+              <input class="input" type="text" placeholder="Min Air Pressure" name="minAirP">
+            </div>
+            <div class="field">
+              <div class="control">
+                <div class="select is-fullwidth">
+                  <select name="windDirection">
+                    <option value="" disabled selected>Wind Direction</option>
+                    <option value="North">North</option>
+                    <option value="South">South</option>
+                    <option value="East">East</option>
+                    <option value="West">West</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <button class="button is-primary">Submit Report</button>
+      </form>
+    </div>
+  </section>
+</body>

@@ -1,0 +1,103 @@
+{
+  "file": "./models/reports.json",
+  "reports": [
+    {
+      "_id": "6ce2ae33-0170-4d45-a3e0-cc78171b3e71",
+      "stationid": "475e837f-553d-4141-ae78-20a0df24e1af",
+      "weatherCode": "501 moderate rain",
+      "maxTemp": 0,
+      "minTemp": 0,
+      "maxWind": 0,
+      "minWind": 0,
+      "maxAirP": 0,
+      "minAirP": 0
+    },
+    {
+      "_id": "758e0c16-29da-429e-bdbc-e0d0588ffb04",
+      "stationid": "475e837f-553d-4141-ae78-20a0df24e1af",
+      "weatherCode": "601 snow",
+      "maxTemp": 12,
+      "minTemp": 1234,
+      "maxWind": 2345,
+      "minWind": 23,
+      "maxAirP": 234,
+      "minAirP": 2345,
+      "windDirection": "West"
+    },
+    {
+      "_id": "dcc9dd80-807e-44ef-ac3e-3c9bc79a3e16",
+      "stationid": "475e837f-553d-4141-ae78-20a0df24e1af",
+      "weatherCode": "711 Smoke",
+      "maxTemp": 97,
+      "minTemp": 456,
+      "maxWind": 0,
+      "minWind": 0,
+      "maxAirP": 0,
+      "minAirP": 0,
+      "windDirection": "South"
+    },
+    {
+      "_id": "729ac108-96d5-4972-8372-3e6595456828",
+      "stationid": "ab2bcaec-352d-43e5-84eb-3dee680516d9",
+      "weatherCode": "615 - Light rain & snow",
+      "maxTemp": 12,
+      "minTemp": 12,
+      "maxWind": 12,
+      "minWind": 12,
+      "maxAirP": 12,
+      "minAirP": 12,
+      "windDirection": "East"
+    },
+    {
+      "_id": "f8e03815-8327-4e54-9035-91353598a1ab",
+      "stationid": "14966460-6635-43b5-a233-6e5fefec1855",
+      "weatherCode": "202 - Thunder & heavy rain",
+      "maxTemp": 1234,
+      "minTemp": 123,
+      "maxWind": 123,
+      "minWind": 0,
+      "maxAirP": 123,
+      "minAirP": 23,
+      "windDirection": "North"
+    },
+    {
+      "_id": "fcef690d-c7ff-49fa-b62f-2e2cbb30823d",
+      "stationid": "2178c9ec-3401-4e6e-80e8-9857f127e16f",
+      "weatherCode": "202 - Thunder & heavy rain",
+      "maxTemp": 1,
+      "minTemp": 1,
+      "maxWind": 1,
+      "minWind": 1,
+      "maxAirP": 1,
+      "minAirP": 1,
+      "windDirection": "North",
+      "timestamp": "2024-08-30T13:44:07.194Z"
+    },
+    {
+      "_id": "9940a24b-69e7-4637-81c2-d75960a20082",
+      "stationid": "2178c9ec-3401-4e6e-80e8-9857f127e16f",
+      "weatherCode": "201 - Thunder & rain",
+      "maxTemp": 2,
+      "minTemp": 2,
+      "maxWind": 2,
+      "minWind": 2,
+      "maxAirP": 2,
+      "minAirP": 2,
+      "windDirection": "South",
+      "timestamp": "8/30/2024 1:46:57 PM"
+    },
+    {
+      "_id": "91119f76-dbd4-4644-8598-18150495bb84",
+      "stationid": "2178c9ec-3401-4e6e-80e8-9857f127e16f",
+      "weatherCode": "503 - Very heavy rain",
+      "maxTemp": 5,
+      "minTemp": 5,
+      "maxWind": 5,
+      "minWind": 6,
+      "maxAirP": 7,
+      "minAirP": 8,
+      "windDirection": "South",
+      "timestamp": "8/30/2024 2:09:45 PM"
+    }
+  ]
+}

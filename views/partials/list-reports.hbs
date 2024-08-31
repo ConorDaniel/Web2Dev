@@ -1,0 +1,36 @@
+<table class="table is-fullwidth">
+  <thead>
+    <tr>
+      <th>TimeStamp</th>
+      <th>Weather Code</th>
+      <th>Max Temp &#8451;</th>
+      <th>Min Temp &#8451;</th>
+      <th>Max Wind km/h</th>
+      <th>Min Wind km/h</th>
+      <th>Max Air Pressure hPa</th>
+      <th>Min Air Pressure hPa</th>
+      <th>Wind Direction</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each station.reports}}
+    <tr>
+      <td>{{timestamp}}</td>
+      <td>{{weatherCode}}</td>
+      <td>{{maxTemp}}</td>
+      <td>{{minTemp}}</td>
+      <td>{{maxWind}}</td>
+      <td>{{minWind}}</td>
+      <td>{{maxAirP}}</td>
+      <td>{{minAirP}}</td>
+      <td>{{windDirection}}</td>
+      <td>
+        <a href="/station/{{../station._id}}/deletereport/{{_id}}" class="button">
+          {{>icons/delete}}
+        </a>
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
